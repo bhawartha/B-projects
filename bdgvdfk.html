@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple Buttons with Transitions</title>
+    <style>
+        /* General body and container styling */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f9;
+            flex-direction: column;
+        }
+
+        /* Container to center buttons with some space between them */
+        .container {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        /* Style for each button */
+        .btn {
+            padding: 20px 40px;
+            font-size: 18px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.4s ease;  /* Common transition for all buttons */
+        }
+
+        /* Button 1: Color Change on Hover */
+        .color-change-btn {
+            background-color: #3498db;
+            color: white;
+        }
+        .color-change-btn:hover {
+            background-color: #2ecc71;  /* Green color on hover */
+        }
+
+        /* Button 2: Scale Effect */
+        .scale-btn {
+            background-color: #e74c3c;
+            color: white;
+        }
+        .scale-btn:hover {
+            transform: scale(1.2);  /* Scale the button on hover */
+        }
+
+        /* Button 3: Rotation Effect */
+        .rotate-btn {
+            background-color: #f39c12;
+            color: white;
+        }
+        .rotate-btn:hover {
+            transform: rotate(45deg);  /* Rotate the button on hover */
+        }
+
+        /* Button 4: Shadow Effect */
+        .shadow-btn {
+            background-color: #8e44ad;
+            color: white;
+        }
+        .shadow-btn:hover {
+            box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);  /* Add shadow on hover */
+        }
+
+        /* Button 5: Border Radius Change */
+        .border-radius-btn {
+            background-color: #16a085;
+            color: white;
+        }
+        .border-radius-btn:hover {
+            border-radius: 50%;  /* Change border-radius to make it circular */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <button class="btn color-change-btn">Color Change</button>
+        <button class="btn scale-btn">Scale Effect</button>
+        <button class="btn rotate-btn">Rotation Effect</button>
+        <button class="btn shadow-btn">Shadow Effect</button>
+        <button class="btn border-radius-btn">Border Radius Change</button>
+    </div>
+
+</body>
+</html>
